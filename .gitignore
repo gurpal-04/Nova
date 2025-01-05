@@ -1,0 +1,20 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Django specific
+db.sqlite3
+media/
+staticfiles/
+
+# Virtual environment
+venv/
+.env
+
+# IDE-specific files (for example, if you're using VS Code or PyCharm)
+.vscode/
+.idea/
+
+# OS-specific files
+.DS_Store   # macOS
+Thumbs.db   # Windows
