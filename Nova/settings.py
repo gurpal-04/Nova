@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-fy*8&!=0r3p#dqb7-22z&!=iw-nl+bn4hk4f^m+h72hq7e&daf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["nova-iuh9.onrender.com"]
+ALLOWED_HOSTS = ["nova-iuh9.onrender.com","127.0.0.1"]
 
 
 # Application definition
@@ -81,9 +81,18 @@ WSGI_APPLICATION = 'Nova.wsgi.application'
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
 DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres.jznfflketdrstyoivvks',
+        'PASSWORD': 'gp@Supabase01#db',
+        # 'HOST': 'jznfflketdrstyoivvks.supabase.co',
+        'HOST': 'aws-0-ap-southeast-1.pooler.supabase.com',
+        'PORT': '5432',
     }
 }
 

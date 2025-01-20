@@ -1,8 +1,11 @@
 # api/urls.py
 from django.urls import path
-from .views import BookList, HelloWorld
+from .views import BookList, HelloWorld, LoginView, LogoutView, SignUpView
 
 urlpatterns = [
     path('books/', BookList.as_view(), name='book-list'),
     path('hello/', HelloWorld.as_view(), name='hello-world'),
+    path('login/', LoginView.as_view(), name='login'),
+    path('logout/', LogoutView.as_view(), name='logout'),
+    path('signup/', SignUpView.as_view(), name='signup'),
 ]
